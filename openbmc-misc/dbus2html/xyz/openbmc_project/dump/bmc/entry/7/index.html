@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>/xyz/openbmc_project/dump/bmc/entry/7</title></head><body><pre>
+<details><summary><b>xyz.openbmc_project.Dump.Manager</b></summary><p style="margin-left:1em;margin-top:0;margin-bottom:0">NAME                                TYPE      SIGNATURE RESULT/VALUE                             FLAGS
+org.freedesktop.DBus.Introspectable interface -         -                                        -
+.Introspect                         method    -         s                                        -
+org.freedesktop.DBus.Peer           interface -         -                                        -
+.GetMachineId                       method    -         s                                        -
+.Ping                               method    -         -                                        -
+org.freedesktop.DBus.Properties     interface -         -                                        -
+.Get                                method    ss        v                                        -
+.GetAll                             method    s         a{sv}                                    -
+.Set                                method    ssv       -                                        -
+.PropertiesChanged                  signal    sa{sv}as  -                                        -
+</p><details><summary>xyz.openbmc_project.Common.Progress interface -         -                                        -</summary><table style="margin-left:1em;width:100%"><td style="background-color:LightGray">MESSAGE "a{sv}" {
+        ARRAY "{sv}" {
+                DICT_ENTRY "sv" {
+                        STRING "Status";
+                        VARIANT "s" {
+                                STRING "xyz.openbmc_project.Common.Progress.OperationStatus.Completed";
+                        };
+                };
+                DICT_ENTRY "sv" {
+                        STRING "StartTime";
+                        VARIANT "t" {
+                                UINT64 1676958745000000;
+                        };
+                };
+                DICT_ENTRY "sv" {
+                        STRING "CompletedTime";
+                        VARIANT "t" {
+                                UINT64 1676958745000000;
+                        };
+                };
+        };
+};</td></table></details><p style="margin-left:1em;margin-top:0;margin-bottom:0">.CompletedTime                      property  t         1676958745000000                         emits-change writable
+.StartTime                          property  t         1676958745000000                         emits-change writable
+.Status                             property  s         "xyz.openbmc_project.Common.Progress.... emits-change writable
+</p><details><summary>xyz.openbmc_project.Dump.Entry      interface -         -                                        -</summary><table style="margin-left:1em;width:100%"><td style="background-color:LightGray">MESSAGE "a{sv}" {
+        ARRAY "{sv}" {
+                DICT_ENTRY "sv" {
+                        STRING "Size";
+                        VARIANT "t" {
+                                UINT64 127932;
+                        };
+                };
+                DICT_ENTRY "sv" {
+                        STRING "Offloaded";
+                        VARIANT "b" {
+                                BOOLEAN false;
+                        };
+                };
+                DICT_ENTRY "sv" {
+                        STRING "OffloadUri";
+                        VARIANT "s" {
+                                STRING "";
+                        };
+                };
+        };
+};</td></table></details><p style="margin-left:1em;margin-top:0;margin-bottom:0">.InitiateOffload                    method    s         -                                        -
+.OffloadUri                         property  s         ""                                       emits-change writable
+.Offloaded                          property  b         false                                    emits-change writable
+.Size                               property  t         127932                                   emits-change writable
+xyz.openbmc_project.Dump.Entry.BMC  interface -         -                                        -
+xyz.openbmc_project.Object.Delete   interface -         -                                        -
+.Delete                             method    -         -                                        -
+</p><details><summary>xyz.openbmc_project.Time.EpochTime  interface -         -                                        -</summary><table style="margin-left:1em;width:100%"><td style="background-color:LightGray">MESSAGE "a{sv}" {
+        ARRAY "{sv}" {
+                DICT_ENTRY "sv" {
+                        STRING "Elapsed";
+                        VARIANT "t" {
+                                UINT64 1676958745000000;
+                        };
+                };
+        };
+};</td></table></details><p style="margin-left:1em;margin-top:0;margin-bottom:0">.Elapsed                            property  t         1676958745000000                         emits-change writable
+</p></details></pre></body></html>
